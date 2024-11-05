@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 2</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="head select d-flex flex-wrap justify-content-between align-items-center p-3">
+        <i class="cross fa-solid fa-xmark" aria-label="Close" style="font-size: 1.5rem; cursor: pointer;"></i>
+        <h4 class="text-left mb-0 mt-2 mt-md-0 flex-grow-1 text-center">Select Filters</h4>
+        <button class="btn btn-outline-secondary reset-btn mt-2 mt-md-0  rounded-pill">Reset</button>
+    </div>
+
+    <!-- Filter list
+     ============================================= -->
+    <div class="list d-flex">
+        <div id="scrollable-section" class="filter-list">
+            <ul class="list-group overflow-auto" style="max-height: 503px;">
+                <li class="list-group-item active">Buy / Rent</li>
+                <li class="list-group-item">Location</li>
+                <li class="list-group-item">Bedroom</li>
+                <li class="list-group-item">Budget</li>
+                <li class="list-group-item">Seller Rating</li>
+                <li class="list-group-item">Property Type</li>
+                <li class="list-group-item">Listed By</li>
+                <li class="list-group-item">Bathroom</li>
+                <li class="list-group-item">Furnishing</li>
+                <li class="list-group-item">Area</li>
+                <li class="list-group-item">Property Age</li>
+                <li class="list-group-item">Possession In</li>
+                <li class="list-group-item">Buy / Rent</li>
+                <li class="list-group-item">Location</li>
+                <li class="list-group-item">Bedroom</li>
+                <li class="list-group-item">Budget</li>
+                <li class="list-group-item">Seller Rating</li>
+                <li class="list-group-item">Property Type</li>
+                <li class="list-group-item">Listed By</li>
+                <li class="list-group-item">Bathroom</li>
+                <li class="list-group-item">Furnishing</li>
+                <li class="list-group-item">Area</li>
+                <li class="list-group-item">Property Age</li>
+                <li class="list-group-item">Possession In</li>
+            </ul>
+        </div>
+
+        <!-- Filter Content
+         ============================================= -->
+
+         <div class="filter-section p-3 bg-light border rounded" style="max-height: 536px; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;">
+            <!-- Filter Content -->
+            <div class="filter-content" >
+                <!-- Listed By -->
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Listed By</label>
+                    <div class="checkbox-group flex-wrap gap-3">
+                        <label><input type="checkbox"> Agent</label>
+                        <label><input type="checkbox"> Builder</label>
+                        <label><input type="checkbox"> Owner</label>
+                    </div>
+                </div>
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Listed By</label>
+                    <div class="checkbox-group flex-wrap gap-3">
+                        <label><input type="checkbox"> Agent</label>
+                        <label><input type="checkbox"> Builder</label>
+                        <label><input type="checkbox"> Owner</label>
+                    </div>
+                </div>
+        
+                <!-- Bathroom -->
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Bathroom</label>
+                    <div class="radio-group  flex-wrap gap-3">
+                        <label><input type="radio" name="bathroom"> 1+</label>
+                        <label><input type="radio" name="bathroom"> 2+</label>
+                        <label><input type="radio" name="bathroom"> 3+</label>
+                        <label><input type="radio" name="bathroom"> Any</label>
+                    </div>
+                </div>
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Bathroom</label>
+                    <div class="radio-group d-flex flex-wrap gap-3">
+                        <label><input type="radio" name="bathroom"> 1+</label>
+                        <label><input type="radio" name="bathroom"> 2+</label>
+                        <label><input type="radio" name="bathroom"> 3+</label>
+                        <label><input type="radio" name="bathroom"> Any</label>
+                    </div>
+                </div>
+        
+                <!-- Furnishing Status -->
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Furnishing Status</label>
+                    <div class="checkbox-group d-flex flex-wrap gap-3">
+                        <label><input type="checkbox"> Unfurnished</label>
+                        <label><input type="checkbox"> Semi-furnished</label>
+                        <label><input type="checkbox"> Fully Furnished</label>
+                    </div>
+                </div>
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Furnishing Status</label>
+                    <div class="checkbox-group d-flex flex-wrap gap-3">
+                        <label><input type="checkbox"> Unfurnished</label>
+                        <label><input type="checkbox"> Semi-furnished</label>
+                        <label><input type="checkbox"> Fully Furnished</label>
+                    </div>
+                </div>
+        
+                <!-- Area -->
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Area</label>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="5000" step="50" class="form-range">
+                        <span class="d-block mt-2">0 - 5,000+ sqft</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Filter Content END
+     ============================================== -->
+
+    <!-- Footer
+      ============================================== -->
+    <div class="footer d-flex justify-content-between fixed-bottom">
+        <div class="apply-button text-center mt-2 mx-2">
+           <p>11286 Properties</p>
+        </div>
+        <!-- Apply Button -->
+        <div class="apply-button text-center mt-2 mx-2">
+            <button class="btn btn-danger  rounded-pill">Apply Filters</button>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Handle click events on list-group items
+            document.querySelectorAll('.list-group-item').forEach(function (item) {
+                item.addEventListener('click', function () {
+                    // Remove 'active' class from all items
+                    document.querySelectorAll('.list-group-item').forEach(function (i) {
+                        i.classList.remove('active');
+                    });
+                    // Add 'active' class to the clicked item
+                    item.classList.add('active');
+
+                    // Hide all filter content
+                    document.querySelectorAll('.filter-content').forEach(function (content) {
+                        content.classList.remove('active');
+                    });
+
+                    // Show the corresponding filter content
+                    const filterToShow = document.getElementById(item.getAttribute('data-filter'));
+                    if (filterToShow) {
+                        filterToShow.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

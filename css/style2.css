@@ -1,0 +1,90 @@
+.head.select {
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 0.25rem; /* Rounded corners */
+}
+
+@media (max-width: 350px) {
+    .head.select h4 {
+        flex-grow: 1; /* Ensures heading takes up space in small screens */
+        text-align: left; /* Keeps text left-aligned */
+    }
+    .head .cross {
+        /* display: none; */
+        
+    }
+}
+
+/* Filter list
+================================================ */
+#scrollable-section {
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 0.25rem; /* Rounded corners */
+    max-width: fit-content;
+}
+
+#scrollable-section ::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+}
+
+@media (max-width: 300px) {
+    #scrollable-section {
+        padding: 1rem; /* Reduce padding on smaller screens */
+        display: none;
+
+    }
+
+    .list-group-item {
+        font-size: 0.9rem; /* Adjust font size on smaller screens */
+    }
+}
+
+/* Filter Content
+=================================================== */
+.filter-content label {
+    margin-bottom: 0.5rem; /* Adds spacing between labels */
+}
+
+.checkbox-group label,
+.radio-group label {
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.range-slider input[type="range"] {
+    width: 100%; /* Ensure range slider takes full width */
+}
+
+.filter-section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 23px;
+    width: 597px;
+}
+.filter-section::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in Chrome, Safari, and Edge */
+}
+
+.filter-section {
+    max-height: 500px; /* Adjust as needed */
+    overflow-y: auto; /* Enables scrolling */
+    -ms-overflow-style: none; /* Hides scrollbar in IE */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+
+@media (max-width: 300px) {
+    .filter-section {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+    
+
+    .checkbox-group,
+    .radio-group {
+        gap: 1rem; /* Adjust gap for smaller screens */
+    }
+}
+
+.footer {
+    background-color: white;
+}
